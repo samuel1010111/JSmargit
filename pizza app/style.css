@@ -1,0 +1,43 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url("https://media.istockphoto.com/id/1152644246/photo/hand-picking-sliced-pizza-with-cheese-ham-bacon-and-pepperoni-on-black-background-with-hot.jpg?s=612x612&w=0&k=20&c=dIPPek8_fHkmgYpgOFVAJPXDjVJpNKnkM4p2hT3pUks=");
+  background-image: cover;
+}
+
+.container {
+  text-align: center;
+  background-color: #bc1515;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  color: #3498db;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.pizza-size, .toppings {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <title>Pizza Hot Order Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="header">Pizza Hot</h1>
+    <form id="pizzaForm">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" required>
+
+      <label for="pizzaType">Pizza Type:</label>
+      <select id="pizzaType" onchange="calculateTotal()">
+        <option value="cheese">Cheese Pizza - €10</option>
+        <option value="veggie">Veggie Pizza - €8</option>
+        <option value="pepperoni">Pepperoni Pizza - €9</option>
+        <option value="meat">Meat Pizza - €11</option>
+        <option value="margherita">Margherita Pizza - €13</option>
+        <option value="bbqChicken">BBQ Chicken Pizza - €14</option>
+        <option value="hawaiian">Hawaiian Pizza - €15</option>
+      </select>
+
+      <label for="pizzaSize">Pizza Size:</label>
+      <div class="pizza-size">
+        <label><input type="radio" name="pizzaSize" value="2" onclick="calculateTotal()"> 2 Servings - €7.50</label>
+        <label><input type="radio" name="pizzaSize" value="4" onclick="calculateTotal()"> 4 Servings - €10.50</label>
+        <label><input type="radio" name="pizzaSize" value="6" onclick="calculateTotal()"> 6 Servings - €12.50</label>
+        <label><input type="radio" name="pizzaSize" value="8" onclick="calculateTotal()"> 8 Servings - €15.50</label>
+      </div>
+
+      <label for="toppings">Toppings:</label>
+      <div class="toppings">
+        <label><input type="checkbox" name="topping" value="pepperoni" onclick="calculateTotal()"> Pepperoni</label>
+        <label><input type="checkbox" name="topping" value="extraCheese" onclick="calculateTotal()"> Extra Cheese</label>
+        <label><input type="checkbox" name="topping" value="mushrooms" onclick="calculateTotal()"> Mushrooms</label>
+        <label><input type="checkbox" name="topping" value="onions" onclick="calculateTotal()"> Onions</label>
+        <!-- Add more toppings as needed -->
+      </div>
+
+      <label for="deliveryOption">Delivery Options:</label>
+      <select id="deliveryOption" onchange="calculateTotal()">
+        <option value="deliveryHome">Delivery Home - €5.00</option>
+        <option value="eatIn">Eat In</option>
+        <option value="pickup">Pickup Food</option>
+      </select>
+
+      <p id="totalPrice">Total Price: €0.00</p>
+
+      <button type="button" onclick="submitOrder()">Place Order</button>
+    </form>
+  </div>
+</body>
+</html>
