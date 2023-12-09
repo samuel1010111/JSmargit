@@ -18,24 +18,36 @@ body {
   color: white;
 }
 
-input {
+ text{
   padding: 0.5rem;
   margin-bottom: 2rem;
   font-size: inherit;
   font-family: inherit;
+}
+.pokemon-cards{
+  max-width: 1200px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  color: darkcyan;
+  font-variant-caps: all-petite-caps;
+  font-size: large;
 }
 
 p {
   color: #333;
 }
 
-.pokedex {
+.pokedex-card {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
-  color: blue;
+  color: darkcyan;
+  font-variant-caps: all-petite-caps;
+  font-size: large;
 }
 
 .pokedex div {
@@ -63,4 +75,18 @@ p {
   .pokedex {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.pokemon-card {
+  background-color: rgba(245, 245, 220, 0.82);
+  padding: 12px;
+  border-radius: 5px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+.pokemon-card:hover {
+  background-color: lightgreen;
 }

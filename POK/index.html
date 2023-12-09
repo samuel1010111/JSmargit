@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Pokeapp</title>
+    <title>Pokedex</title>
   </head>
   <body>
-    <div class="container">
+    <header>
       <h1>Pokedex</h1>
-      <input type="text" />
-      <div class="pokedex"></div>
+    </header>
+    <div id="search">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search Pokemon by name"
+      />
     </div>
+    <div id="generation-list">
+      <button class="button">Gen 1</button>
+      <button class="button">Gen 2</button>
+      <button class="button">Gen 3</button>
+      <button class="button">Gen 4</button>
+      <button class="button">Gen 5</button>
+      <button class="button">Gen 6</button>
+      <button class="button">Gen 7</button>
+      <button class="button">Gen 8</button>
+      <button class="button">Gen 9</button>
+    </div>
+    <div id="pokemon-cards"><!-- Pokemon cards will be displayed here --></div>
     <script src="main.js"></script>
   </body>
 </html>
